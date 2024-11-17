@@ -1,49 +1,68 @@
-/* OrderForm.css */
-
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #def4fe;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(35, 7, 155, 0.15);
+}
+
+.heading {
+  margin-bottom: 15px;
+  color: #003366;
+  font-size: 24px;
+  text-align: center;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 0.5rem;
+}
+
+.input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cce7ff;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input:focus {
+  border-color: #007acc;
+  box-shadow: 0 0 10px rgba(0, 122, 204, 0.3);
+}
+
+.button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #003366;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+  background-color: #002244;
+  transform: scale(1.05);
+}
+
+@keyframes subtle-glow {
+  from {
+    box-shadow: 0 0 0 rgba(8, 37, 186, 0);
   }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  to {
+    box-shadow: 0 0 10px rgba(0, 122, 204, 0.5);
   }
-  
-  .heading {
-    margin-bottom: 15px;
-    color: #333;
-    font-size: 24px;
-    text-align: center;
-  }
-  
-  .input {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-  }
-  
-  .button {
-    padding: 10px;
-    border-radius: 4px;
-    border: none;
-    background-color: #4CAF50;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .button:hover {
-    background-color: #45a049;
-  }
-  
+}
+
+.button:hover {
+  animation: subtle-glow 0.5s ease-in-out forwards;
+}

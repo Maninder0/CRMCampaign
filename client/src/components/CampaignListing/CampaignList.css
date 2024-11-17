@@ -1,36 +1,43 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #003366;
+}
+
 .table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 1rem;
-  }
-  
-  .table th,
-  .table td {
-    padding: 0.75rem;
-    vertical-align: top;
-  }
-  
-  .table th {
-    border-top: 1px solid #dee2e6;
-    text-align: left;
-  }
-  
-  .table td {
-    border-top: 1px solid #dee2e6;
-  }
-  
-  .message-column {
-    width: 25%; /* Adjust the width as needed */
-  }
-  
-  .sentAt-column {
-    width: 15%; /* Adjust the width as needed */
-  }
-  
-  .heading {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-    color: #333;
-  }
-  
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  background-color: #f0faff;
+  font-size: 1rem;
+}
+
+.table th {
+  background-color: #cce7ff;
+  color: #003366;
+  padding: 0.75rem;
+  vertical-align: middle;
+  text-align: left;
+  border-bottom: 2px solid #b3d9ff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.table td {
+  padding: 0.75rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #e0f0ff;
+  color: #003366;
+  font-weight: 300;
+}
+
+.table tr:hover {
+  background-color: #e6f7ff;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #005b99;
+  font-weight: 600;
+}

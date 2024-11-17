@@ -4,15 +4,15 @@ import CustomerForm from '../components/DataIngestion/CustomerForm';
 import OrderForm from '../components/DataIngestion/OrderForm';
 import AudienceForm from '../components/DataIngestion/AudienceForm';
 import CampaignList from '../components/CampaignListing/CampaignList';
-import HomePage from '../pages/HomePage'; // Import the HomePage component
+import HomePage from '../pages/HomePage'; 
 import './Home.css';
 
 const Home = ({ onLogout }) => {
   const navigate = useNavigate();
 
   const handleLogout = async () => {
-    await onLogout(); // Wait for logout operation to complete
-    navigate('/login', { replace: true }); // Navigate to login page immediately
+    await onLogout(); 
+    navigate('/login', { replace: true }); 
   };
 
   return (
